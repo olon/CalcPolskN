@@ -1,0 +1,419 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/entry_field_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="end"
+        android:inputType="none"
+        android:singleLine="true"
+        android:text="@string/field_text"
+        android:textSize="28sp"
+        android:textStyle="normal"
+        android:typeface="normal" />
+    
+    <TextView
+        android:id="@+id/result_text_view"
+		android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:inputType="none"
+        android:singleLine="true"
+        android:text="@string/result" 
+        android:textSize="28sp"
+        android:textStyle="normal"
+        android:typeface="normal"
+        android:background="#cfeef8"/>
+    
+	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+        
+	<Button
+        android:id="@+id/add_memory_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="0px"
+        android:text="@string/memory_plus"
+        android:background="@drawable/custombutton"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:onClick="ButtonClickHandler"/>
+	
+	<Button
+        android:id="@+id/read_memory_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="0px"
+        android:text="@string/memory_read"
+        android:background="@drawable/custombutton"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:onClick="ButtonClickHandler"/>
+	
+	<Button
+        android:id="@+id/clear_memory_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="0px"
+        android:text="@string/memory_clear"
+        android:background="@drawable/custombutton"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:onClick="ButtonClickHandler"/>
+	
+	<Button
+        android:id="@+id/clear_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="0px"
+        android:text="@string/clear"
+        android:background="@drawable/custombutton"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:onClick="ButtonClickHandler"/>
+	
+	<Button
+	    android:id="@+id/backspace_button"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_weight="1"
+	    android:background="@drawable/custombutton"
+	    android:gravity="center"
+	    android:padding="0px"
+	    android:text="@string/backspace"
+	    android:textSize="24sp"
+	    android:textStyle="bold"
+	    android:typeface="serif"
+        android:onClick="ButtonClickHandler"/>
+	
+    </LinearLayout>
+    
+	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+        
+	<Button
+        android:id="@+id/numre_one_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="0px"
+        android:text="@string/one"
+        android:background="@drawable/custombutton"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:onClick="ButtonClickHandler"/>
+	
+	<Button
+        android:id="@+id/numre_two_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="0px"
+        android:text="@string/two"
+        android:background="@drawable/custombutton"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:onClick="ButtonClickHandler"/>
+	
+	<Button
+        android:id="@+id/numre_three_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="0px"
+        android:text="@string/three"
+        android:background="@drawable/custombutton"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:onClick="ButtonClickHandler"/>
+	
+	<Button
+        android:id="@+id/plus_sign_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="0px"
+        android:text="@string/plus"
+        android:background="@drawable/custombutton"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:onClick="ButtonClickHandler"/>
+	
+	<Button
+        android:id="@+id/minus_sign_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="0px"
+        android:text="@string/minus"
+        android:background="@drawable/custombutton"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:onClick="ButtonClickHandler"/>
+	
+    </LinearLayout>
+    
+	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+        
+	<Button
+        android:id="@+id/numre_four_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="0px"
+        android:text="@string/four"
+        android:background="@drawable/custombutton"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:onClick="ButtonClickHandler"/>
+	
+	<Button
+        android:id="@+id/numre_five_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="0px"
+        android:text="@string/five"
+        android:background="@drawable/custombutton"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:onClick="ButtonClickHandler"/>
+	
+	<Button
+        android:id="@+id/numre_six_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="0px"
+        android:text="@string/six"
+        android:background="@drawable/custombutton"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:onClick="ButtonClickHandler"/>
+	
+	<Button
+        android:id="@+id/multiply_sign_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="0px"
+        android:text="@string/multiply"
+        android:background="@drawable/custombutton"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:onClick="ButtonClickHandler"/>
+	
+	<Button
+        android:id="@+id/devision_sign_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="0px"
+        android:text="@string/devision"
+        android:background="@drawable/custombutton"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:onClick="ButtonClickHandler"/>
+	
+    </LinearLayout>
+
+	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+        
+	<Button
+        android:id="@+id/numre_seven_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="0px"
+        android:text="@string/seven"
+        android:background="@drawable/custombutton"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:onClick="ButtonClickHandler"/>
+	
+	<Button
+        android:id="@+id/numre_eight_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="0px"
+        android:text="@string/eight"
+        android:background="@drawable/custombutton"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:onClick="ButtonClickHandler"/>
+	
+	<Button
+        android:id="@+id/numre_nine_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="0px"
+        android:text="@string/nine"
+        android:background="@drawable/custombutton"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:onClick="ButtonClickHandler"/>
+	
+	<Button
+        android:id="@+id/degree_sign_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="0px"
+        android:text="@string/degree"
+        android:background="@drawable/custombutton"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:onClick="ButtonClickHandler"/>
+	
+	<Button
+        android:id="@+id/remainder_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="0px"
+        android:text="@string/remainder"
+        android:background="@drawable/custombutton"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:onClick="ButtonClickHandler"/>
+	
+    </LinearLayout>
+    
+	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+        
+	<Button
+        android:id="@+id/result_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="0px"
+        android:text="@string/res"
+        android:background="@drawable/custombutton"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:onClick="ButtonClickHandler"/>
+	
+	<Button
+        android:id="@+id/numre_zero_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="0px"
+        android:text="@string/zero"
+        android:background="@drawable/custombutton"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:onClick="ButtonClickHandler"/>
+	
+	<Button
+        android:id="@+id/point_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="0px"
+        android:text="@string/point"
+        android:background="@drawable/custombutton"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:onClick="ButtonClickHandler"/>
+	
+	<Button
+        android:id="@+id/left_parenthesis_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="0px"
+        android:text="@string/left_parenthesis"
+        android:background="@drawable/custombutton"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:onClick="ButtonClickHandler"/>
+	
+	<Button
+        android:id="@+id/right_parenthesis_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="0px"
+        android:text="@string/right_parenthesis"
+        android:background="@drawable/custombutton"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:onClick="ButtonClickHandler"/>
+	
+    </LinearLayout>
+
+</LinearLayout>
